@@ -1,0 +1,171 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background: #092635; /* Background color */
+}
+
+header {
+    background: #1b4242; /* Header background color */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Ensures items align to the start of the flex container */
+}
+
+.project-card {
+    background: #5c8374; /* Card background color */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    height: auto; /* Adjusts height based on content */
+    max-height: 600px; /* Limits max height to prevent overflow */
+    margin: 20px; /* Adds spacing around each card */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-header {
+    position: relative;
+    margin-bottom: 15px; /* Adds spacing below the header */
+}
+
+.project-header img {
+    width: 100%;
+    height: 200px; /* Fixed height for image */
+    object-fit: cover; /* Ensures image covers the container without distortion */
+    border-bottom: 3px solid #9ec8b9; /* Border color */
+    transition: transform 0.3s;
+}
+
+.project-header img:hover {
+    transform: scale(1.1);
+}
+
+.project-card h3 {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description-preview {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #1b4242; /* Description background color */
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 75px; /* Adjust height to fit 1 line of text + padding */
+    margin-bottom: 10px; /* Adds space below preview */
+}
+
+.description-full {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    background: #1b4242; /* Description background color */
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    display: block; /* Ensure it's displayed */
+}
+
+.github-link {
+    display: block;
+    text-align: right;
+    color: #9ec8b9; /* Link color */
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.github-link:hover {
+    color: #ffffff; /* Hover color */
+}
+
+.technologies-container {
+    margin: 15px 0;
+}
+
+.tech-tag {
+    display: inline-block;
+    background: #9ec8b9; /* Technology tag background color */
+    color: #1b4242; /* Technology tag text color */
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    margin-bottom: 5px; /* Adds spacing between tags */
+    overflow-wrap: break-word; /* Ensures tags don't overflow */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto; /* Pushes buttons to the bottom of the card */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+    margin-right: 10px;
+}
+
+.btn-view {
+    background: #4a7b7b;
+}
+
+.btn-view:hover {
+    background: #5c8c7f;
+}
+
+.btn-source {
+    background: #3e5c5c;
+}
+
+.btn-source:hover {
+    background: #4a6b6b;
+}
