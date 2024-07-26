@@ -2,35 +2,83 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             title: 'IT Career Guide',
-            description: 'This comprehensive guide offers valuable resources and structured advice for newcomers preparing for IT careers. It covers motivation, aptitude, programming languages, data structures, and algorithms, all organized in an accessible manner.',
+            description: 'This resource provides a comprehensive guide for newcomers preparing for programming and coding challenges. It includes various resources, tips, and practice problems to help build a solid foundation in programming. The guide serves as a structured reference to support and enhance the learning process for those new to coding.',
             thumbnail: 'images/cg.jpg', // Replace with actual image path
             technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
-            link: 'https://www.example.com/project1', // Replace with actual project link
+            link: 'https://sanjoy-chattopadhay.github.io/prep-guide-for-beginners/', // Replace with actual project link
             source: 'https://github.com/Sanjoy-Chattopadhay/prep-guide-for-beginners'
         },
         {
             title: 'EZ-Coding',
-            description: 'This user-friendly platform provides a curated collection of coding challenges with detailed descriptions, examples, and solutions, making it ideal for both beginners and advanced programmers. The minimalist design, interactive features, and comprehensive content align well with the rigorous academic environment of NIT Durgapur, helping students enhance their problem-solving skills effectively.',
-            thumbnail: 'images/cg.jpg', // Replace with actual image path
-            technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
-            link: 'https://www.example.com/project2', // Replace with actual project link
-            source: 'https://github.com/Sanjoy-Chattopadhay/ez-coding'
+            description: 'EZ-Coding is a project designed to simplify learning programming through clear tutorials and practical challenges. It caters to beginners and intermediate coders by offering structured resources and hands-on examples. The goal is to make coding more accessible and enjoyable for learners at various skill levels.',
+            thumbnail: 'images/ez.jpg', // Replace with actual image path
+            technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'Node.js'],
+            link: 'https://sanjoy-chattopadhay.github.io/EZ-Coding/', // Replace with actual project link
+            source: 'https://github.com/Sanjoy-Chattopadhay/EZ-Coding'
         },
         {
             title: 'International Game Technology (IGT)',
-            description: 'This is a Banking project I have been working on since last year. It is a combination of three Spring boot projects where Spring Framework, Spring Security, Kafka Services, Microsoft Graph API are used. It works with Respect to Work items. User mails with invoice receipt on a particular mail id and a work item would be created with respect to that. Now Users will be able to access the work items and route that to different queues. And based on the criteria and approval levels, those will be approved.',
-            thumbnail: 'images/cg.jpg', // Replace with actual image path
+            description: 'It is a combination of three Spring boot projects where Spring Framework, Spring Security, Kafka Services, Microsoft Graph API are used. It works with Respect to Work items. User mails with invoice receipt on a particular mail id and a work item would be created with respect to that. Now Users will be able to access the work items and route that to different queues. And based on the criteria and approval levels, those will be approved.',
+            thumbnail: 'images/igt.jpg', // Replace with actual image path
             technologies: ['Spring Boot', 'Kafka Tools', 'Spring Cloud', 'Spring Webflow', 'Apache ZooKeeper'],
-            link: 'https://www.example.com/project3', // Replace with actual project link
-            source: 'https://github.com/Sanjoy-Chattopadhay/igt'
+            link: 'https://www.purrweb.com/blog/mobile-app-development-for-banking/', // Replace with actual project link
+            source: 'https://www.purrweb.com/blog/mobile-app-development-for-banking/'
         },
         {
             title: 'Library Management Application',
             description: 'A robust system built with Java and Spring Boot for efficient management of library resources. This project showcases my skills in developing scalable applications with features for cataloging books, managing user accounts, and tracking borrowings.',
-            thumbnail: 'images/cg.jpg', // Replace with actual image path
-            technologies: ['Java', 'Spring Boot'],
-            link: 'https://github.com/SanjoyChatterjee/Liabrary-Management-Application/',
-            source: 'https://github.com/SanjoyChatterjee/Liabrary-Management-Application/'
+            thumbnail: 'images/lmg.png', // Replace with actual image path
+            technologies: ['Java', 'Gradle', 'Android'],
+            link: 'https://github.com/Sanjoy-Chattopadhay/Liabrary-Management-Application',
+            source: 'https://github.com/Sanjoy-Chattopadhay/Liabrary-Management-Application'
+        },
+        {
+            title: 'Mac Address Changer using Python',
+            description: 'A tool developed in Python for changing the MAC address of a network interface. This project demonstrates my ability to handle network configurations and scripting, offering a practical solution for privacy and network management.',
+            thumbnail: 'images/mac.jpg', // Replace with actual image path
+            technologies: ['Python', 'Networking', 'Command-line Interface'],
+            link: 'https://github.com/SanjoyChatterjee/mac_changer',
+            source: 'https://github.com/SanjoyChatterjee/mac_changer'
+        },
+        {
+            title: 'Portfolio',
+            description: 'This clean and professional portfolio showcases Sanjoy\'s skills, projects, and achievements in web development and competitive programming. The site is well-organized, with sections detailing his experience, projects, and contact information, making it an impressive representation of his expertise and dedication.',
+            thumbnail: 'images/portfolio.jpg', // Replace with actual image path
+            technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'Node.js'],
+            link: 'https://sanjoy-chattopadhay.github.io/portfolio/',
+            source: 'https://sanjoy-chattopadhay.github.io/portfolio/'
+        },
+        {
+            title: 'To-Do List App with Google Calendar Integration',
+            description: 'A web application that utilizes Google API to synchronize tasks with Google Calendar, featuring a responsive design implemented with CSS, JavaScript, and Bootstrap. This project demonstrates my proficiency in API integration and modern web development techniques.',
+            thumbnail: 'images/todo.jpg', // Replace with actual image path
+            technologies: ['JavaScript', 'CSS', 'Bootstrap', 'Google API', 'Responsive Design'],
+            link: 'https://sanjoy-chattopadhay.github.io/To-Do-List-App-with-Google-Calendar-Integration/', // Replace with actual project link
+            source: 'https://github.com/Sanjoy-Chattopadhay/To-Do-List-App-with-Google-Calendar-Integration'
+        },
+        {
+            title: 'Weather Teller',
+            description: 'It is a weather application that fetches data from https://home.openweather map.org/ using API and city name. Besides temperature, it also tells windspeed and humidity.',
+            thumbnail: 'images/weather.jpg', // Replace with actual image path
+            technologies: ['JavaScript', 'CSS', 'HTML', 'OpenWeatherMap API', 'Responsive Design'],
+            link: 'https://sanjoy-chattopadhay.github.io/know_your_weather/',
+            source: 'https://github.com/Sanjoy-Chattopadhay/know_your_weather'
+        },
+        {
+            title: 'Pick Color',
+            description: 'An interactive color picker tool with a sleek dark theme, featuring HEX and RGB color values, a color palette generator, and a stylish digital clock.',
+            thumbnail: 'images/color-picker.jpg', // Replace with actual image path
+            technologies: ['JavaScript', 'CSS', 'HTML', 'Color Picker API'],
+            link: 'https://sanjoy-chattopadhay.github.io/color-picker/', // Replace with actual project link
+            source: 'https://github.com/Sanjoy-Chattopadhay/color-picker'
+        },
+        {
+            title: 'Note Keeper App',
+            description: 'A comprehensive note-taking application that helps users organize and manage their notes efficiently. It supports various features such as categorization, search functionality, and data persistence.',
+            thumbnail: 'images/react-todo.png', // Replace with actual image path
+            technologies: ['JavaScript', 'HTML', 'CSS'],
+            link: 'https://tzb03n.csb.app/',
+            source: 'https://github.com/Sanjoy-Chattopadhay/Note-Keeper-App'
         }
     ];
 
@@ -44,22 +92,18 @@ document.addEventListener('DOMContentLoaded', function() {
             `<span class="tech-tag">${tech}</span>`
         ).join(' ');
 
-        const descriptionPreview = project.description.split(' ').slice(0, 100).join(' ') + '...'; // Preview text with up to 5 lines
-        const fullDescription = project.description;
-
         projectCard.innerHTML = `
             <div class="project-header">
                 <img src="${project.thumbnail}" alt="${project.title}">
-                <h3>${project.title}</h3>
+                <h3><i class="fas fa-project-diagram"></i> ${project.title}</h3>
             </div>
-            <p class="description-preview">${descriptionPreview}</p>
-            <p class="description-full">${fullDescription}</p>
+            <p class="description-full">${project.description}</p>
             <div class="technologies-container">
                 ${techTags}
             </div>
             <div class="buttons-container">
-                <a href="${project.link}" class="btn btn-view">Take a Look</a>
-                <a href="${project.source}" class="btn btn-source">Source Code</a>
+                <a href="${project.link}" class="btn btn-view"><i class="fas fa-eye"></i> Take a Look</a>
+                <a href="${project.source}" class="btn btn-source"><i class="fas fa-code"></i> Source Code</a>
             </div>
         `;
 
