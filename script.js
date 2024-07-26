@@ -79,6 +79,14 @@ document.addEventListener('DOMContentLoaded', function() {
             technologies: ['JavaScript', 'HTML', 'CSS'],
             link: 'https://tzb03n.csb.app/',
             source: 'https://github.com/Sanjoy-Chattopadhay/Note-Keeper-App'
+        },
+        {
+            title: 'Project Portfolio',
+            description: 'A comprehensive portfolio showcasing various projects, each with a detailed description, technology stack, and links to the live project and source code.',
+            thumbnail: 'images/projects.jpg', // Replace with actual image path
+            technologies: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
+            link: 'https://sanjoy-chattopadhay.github.io/my-projects/',
+            source: 'https://github.com/Sanjoy-Chattopadhay/my-projects'
         }
     ];
 
