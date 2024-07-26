@@ -18,6 +18,9 @@ header {
 
 h1 {
     font-size: 2.5rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .section {
@@ -34,11 +37,11 @@ h1 {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start; /* Ensures items align to the start of the flex container */
+    align-items: flex-start;
 }
 
 .project-card {
-    background: #5c8374; /* Card background color */
+    background: #5c8374;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -51,8 +54,8 @@ h1 {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
-    height: auto; /* Adjusts height based on content */
-    margin: 20px; /* Adds spacing around each card */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px;
 }
 
 .project-card:hover {
@@ -62,14 +65,14 @@ h1 {
 
 .project-header {
     position: relative;
-    margin-bottom: 15px; /* Adds spacing below the header */
+    margin-bottom: 15px;
 }
 
 .project-header img {
     width: 100%;
-    height: 200px; /* Fixed height for image */
-    object-fit: cover; /* Ensures image covers the container without distortion */
-    border-bottom: 3px solid #9ec8b9; /* Border color */
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #9ec8b9;
     transition: transform 0.3s;
 }
 
@@ -78,46 +81,38 @@ h1 {
 }
 
 .project-card h3 {
-    margin: 10px 0;
+    margin: 15px 0;
     color: #ffffff;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700; /* Slightly bolder font weight */
+    letter-spacing: 0.5px;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
-.description-preview {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #e0e0e0;
-    background: #1b4242; /* Description background color */
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 10px; /* Adds space below preview */
-    height: 75px; /* Adjust height to fit 1 line of text + padding */
-    overflow: hidden; /* Ensures no overflow */
+.project-card h3:hover {
+    color: #9ec8b9; /* Change color on hover */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* More pronounced shadow */
 }
 
 .description-full {
     font-size: 16px;
     line-height: 1.6;
     color: #e0e0e0;
-    background: #1b4242; /* Description background color */
+    background: #1b4242;
     border-radius: 8px;
-    padding: 10px;
-    margin-top: 10px;
-    display: block; /* Ensure it's displayed */
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #9ec8b9; /* Add border for emphasis */
+    transition: background 0.3s, border-color 0.3s, color 0.3s, transform 0.3s;
+    text-align: justify; /* Justify text for a cleaner look */
+    letter-spacing: 0.5px;
 }
 
-.github-link {
-    display: block;
-    text-align: right;
-    color: #9ec8b9; /* Link color */
-    text-decoration: none;
-    margin-top: 10px;
-    font-weight: 600;
-}
-
-.github-link:hover {
-    color: #ffffff; /* Hover color */
+.description-full:hover {
+    background: #2a5959; /* Darker background on hover */
+    border-color: #7cb8b8; /* Lighter border on hover */
+    color: #ffffff; /* Change text color on hover */
+    transform: scale(1.02); /* Slightly enlarge text on hover */
 }
 
 .technologies-container {
@@ -126,30 +121,38 @@ h1 {
 
 .tech-tag {
     display: inline-block;
-    background: #9ec8b9; /* Technology tag background color */
-    color: #1b4242; /* Technology tag text color */
-    padding: 5px 10px;
+    background: #9ec8b9;
+    color: #1b4242;
+    padding: 6px 12px;
     border-radius: 12px;
     margin-right: 8px;
     font-size: 14px;
-    margin-bottom: 5px; /* Adds spacing between tags */
-    overflow-wrap: break-word; /* Ensures tags don't overflow */
+    font-weight: 600; /* Make tech tags stand out */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.tech-tag:hover {
+    background: #1b4242;
+    color: #9ec8b9;
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .buttons-container {
     display: flex;
     justify-content: space-between;
-    margin-top: auto; /* Pushes buttons to the bottom of the card */
+    margin-top: auto;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 5px;
     text-decoration: none;
     color: #fff;
-    transition: background 0.3s;
-    margin-right: 10px;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .btn-view {
@@ -158,6 +161,7 @@ h1 {
 
 .btn-view:hover {
     background: #5c8c7f;
+    transform: scale(1.05);
 }
 
 .btn-source {
@@ -166,4 +170,20 @@ h1 {
 
 .btn-source:hover {
     background: #4a6b6b;
+    transform: scale(1.05);
+}
+
+
+.project-card h3 i {
+    margin-right: 8px;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.project-header img {
+    border-radius: 15px; /* Adjust the value as needed */
+    width: 100%; /* Ensures images fit within the container */
+    height: auto; /* Maintains aspect ratio */
 }
